@@ -9,50 +9,199 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .nav-item a {
+        color: azure !important;
+      }
+      #banner {
+        padding: 20px;
+        background-image: url(images/templatemo_banner_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #contents {
+        font-size: 14px;
+      }
+      #contenct li {
+        line-height: 2.5;
+      }
+      .bg-image-1 {
+        background-image: url(images/templatemo_footer_title_bg.png);
+        background-size: cover;
+      }
+      #footer li {
+        font-size: 13px;
+        padding-left: 10px;
+        color: #a2a5a4;
+      }
+      #footer p {
+        padding-left: 10px;
+      }
+      #copyright {
+        font-size: 11px;
+      }
+    </style>
   </head>
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light"
-      style="
-        background-image: url('images/templatemo_logo_blank.jpg');
-        background-size: cover;
-      "
+      style="background-color: #1d2120 !important; background-size: cover"
     >
-      <a class="navbar-brand" href="#">
-        <img src="/images/templatemo_logo.jpg" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="#">
+          <img src="/images/templatemo_logo.jpg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
+    <div style="border: 2px solid #000" class="container-fluid" id="banner">
+      <div class="row">
+        <div class="col-sm">
+          <img
+            src="images/templatemo_image_01.jpg"
+            class="img-fluid float-right"
+            alt="Responsive image"
+          />
+        </div>
+        <div class="col">
+          <h2>h2. Bootstrap heading</h2>
+          <p>You can use the mark tag to text.</p>
+          <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <h1>My Bootstrap Website</h1>
-      <p>This is a sample paragraph.</p>
-      <button class="btn btn-primary">Click me</button>
+      <div class="row">
+        <div
+          id="contents"
+          style="padding: 50px; margin-left: 20px"
+          class="col-sm-12 col-md-8"
+        >
+          <p class="h3">Welcome to our WEBSITE!</p>
+          <img
+            src="images/templatemo_header_01_bg.jpg"
+            class="img-fluid"
+            alt="Responsive image"
+          />
+          <p>
+            This is a professional XHTML/CSS layout provided by templatemo.com
+            for free of charge. You can use this template for any purpose.
+            Credit goes to Free Photos for photos.
+          </p>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a
+            justo dolor. Duis in tincidunt lorem. Nunc et tellus nisi. Nulla non
+            velit lectus. Morbi luctus ullamcorper felis, non gravida neque
+            congue sit amet.
+          </p>
+          <ul class="text-muted">
+            <li>
+              Integer tempor, libero quis laoreet dapibus, quam mauris hendrerit
+              urna, vel feugiat dolor lectus non velit. Fusce at nisl libero, ac
+              fringilla risus.
+            </li>
+            <li>
+              Proin non velit nec enim volutpat euismod. Phasellus lorem velit,
+              porttitor non iaculis in, euismod a metus. Nullam orci odio,
+              dignissim a egestas ac, sollicitudin in quam.
+            </li>
+          </ul>
+          <p
+            style="border-left: 10px solid #536592; padding-left: 20px"
+            class="text-muted"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a
+            justo dolor. Duis in tincidunt lorem. Nunc et tellus nisi. Nulla non
+            velit lectus. Morbi luctus ullamcorper felis, non gravida neque
+            congue sit amet. Nam nec mi metus, ac elementum velit. Etiam vel
+            arcu velit, eget consequat risus.
+          </p>
+        </div>
+        <div class="col">testest</div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div id="footer" class="col-sm-3 col-md-2">
+            <p class="bg-image-1">Services</p>
+            <ul class="list-unstyled">
+              <li>Lorem</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+            </ul>
+          </div>
+          <div id="footer" class="col-sm-3 col-md-2">
+            <p class="bg-image-1">About</p>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+            </ul>
+          </div>
+          <div id="footer" class="col-sm-3 col-md-2">
+            <p class="bg-image-1">Cool links</p>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+            </ul>
+          </div>
+          <div id="footer" class="col-sm-3 col-md-2">
+            <p class="bg-image-1">Partners</p>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+              <li>Cum sociis</li>
+              <li>Donec quam</li>
+            </ul>
+          </div>
+        </div>
+        <div id="copyright" class="text-muted">
+          Copyright © 2048 <a href="#">Your Company Name</a> |
+          <a href="#">Website Templates</a> by
+          <a href="#">Free CSS Templates</a>
+        </div>
+      </div>
+    </footer>
+    <div style="text-align: center" class="container">
+      This template downloaded form <a href="#">free website templates</a>
     </div>
   </body>
 </html>
